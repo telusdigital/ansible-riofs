@@ -16,3 +16,4 @@
       upstart_user: "{{ riofs_user }}"
       upstart_group: "{{ riofs_group }}"
     - role: ansible-riofs
+      riofs_bucket_name: travis
