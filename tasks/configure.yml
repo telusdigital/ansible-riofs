@@ -3,8 +3,8 @@
   file:
     state: touch
     path: /etc/fuse.conf
-    owner: "{{ riofs_user }}"
-    group: "{{ riofs_group }}"
+    owner: root
+    group: staff
     mode: 0664
   tags:
     - configuration
@@ -45,8 +45,8 @@
   template:
     src: "{{ item }}"
     dest: "/{{ item }}"
-    owner: "{{ riofs_user }}"
-    group: "{{ riofs_group }}"
+    owner: root
+    group: staff
     mode: 0775
   with_items:
     - usr/local/etc/riofs/riofs.conf.xml
