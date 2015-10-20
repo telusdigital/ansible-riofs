@@ -1,4 +1,15 @@
 ---
+- name: "File exists | /etc/fuse.conf"
+  file:
+    state: touch
+    path: /etc/fuse.conf
+    owner: "{{ riofs_user }}"
+    group: "{{ riofs_group }}"
+    mode: 0664
+  tags:
+    - configuration
+    - fuse
+
 - name: Configure | /etc/fuse.conf | user_allow_other
   lineinfile:
     state: present
@@ -35,11 +46,11 @@
     src: "{{ item }}"
     dest: "/{{ item }}"
     owner: "{{ riofs_user }}"
-    group: wcadmin
+    group: "{{ riofs_group }}"
     mode: 0775
   with_items:
     - usr/local/etc/riofs/riofs.conf.xml
-  notify: Reload Service | riofs
+  notify: service | riofs | reloaded
   tags:
     - configuration
     - template-configuration
