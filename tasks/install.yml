@@ -42,7 +42,7 @@
   args:
     chdir: "{{ riofs_build_path }}"
     creates: "{{ '/usr/local/bin/riofs' if not riofs_always_reinstall else omit }}"
-  notify: service | riofs | reloaded
+  notify: service | riofs | restarted
 
 - name: Cleanup | make clean
   command: make clean
