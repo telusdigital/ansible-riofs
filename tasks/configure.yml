@@ -39,7 +39,7 @@
     mode: 0775
   with_items:
     - usr/local/etc/riofs/riofs.conf.xml
-  notify: service | riofs | reloaded
+  notify: service | riofs | restarted
   tags:
     - configuration
     - template-configuration
