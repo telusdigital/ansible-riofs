@@ -28,7 +28,7 @@
     name: "{{ item }}"
     groups: "{{ riofs_group }}"
     append: yes
-  with_items: riofs_users
+  with_items: "{{ riofs_users }}"
 
 - name: Upload Config | RioFS
   template:
