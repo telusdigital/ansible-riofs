@@ -16,7 +16,7 @@
 
 - name: Clone Repository
   git:
-    repo: 'https://github.com/skoobe/riofs.git'
+    repo: 'https://github.com/aaronpederson/riofs.git'
     dest: "{{ riofs_build_path }}"
 
 - name: Build | autogen
