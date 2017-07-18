@@ -17,7 +17,8 @@
   apt:
     state: latest
     pkg: libssl-dev
-    default_release: 1.0.2
+    default_release: '1.0.*'
+    update_cache: yes
 
 - name: Clone Repository
   git:
