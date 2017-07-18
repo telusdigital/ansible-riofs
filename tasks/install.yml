@@ -10,9 +10,14 @@
     - libfuse-dev
     - libglib2.0-dev
     - libmagic-dev
-    - libssl-dev
     - libxml2-dev
     - pkg-config
+
+- name: Install libssl-dev
+  apt:
+    state: latest
+    pkg: libssl-dev
+    default_release: '1.0.*'
 
 - name: Clone Repository
   git:
