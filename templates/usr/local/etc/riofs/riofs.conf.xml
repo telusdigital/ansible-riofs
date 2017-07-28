@@ -16,7 +16,7 @@
     <writers type="int">2</writers>
     <readers type="int">2</readers>
 
-    <!-- number of concurrent connections for "other" operations,
+    <!-- number of concurrent connections for "other" operations, 
          such as directory listing, object deleting, etc -->
     <operations type="int">4</operations>
 
@@ -35,12 +35,12 @@
     <!-- part size for upload / download files (5mb is the minimal value) -->
     <part_size type="uint">5242880</part_size>
 
-    <!-- compatibility with s3fs: send HEAD request to S3 if file size is 0 to check if it's a directory
+    <!-- compatibility with s3fs: send HEAD request to S3 if file size is 0 to check if it's a directory 
          Greatly increases directory access time. Consider to disable this option. -->
     <check_empty_files type="boolean">False</check_empty_files>
 
-    <!-- Storage class to use for storing the object.
-         Valid Values: STANDARD | REDUCED_REDUNDANCY
+    <!-- Storage class to use for storing the object. 
+         Valid Values: STANDARD | REDUCED_REDUNDANCY 
          Please read S3 documentation before changing this value ! -->
     <storage_type type="string">STANDARD</storage_type>
 
