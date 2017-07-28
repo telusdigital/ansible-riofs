@@ -14,6 +14,10 @@
     - libxml2-dev
     - pkg-config
 
+# CRYPTO_mem_leaks_fp Issue #12
+- name: Specify deprecated libssl-dev version
+  command: dpkg -i /var/cache/apt/archives/libssl-dev_1.0.1f-1ubuntu2.22_amd64.deb
+
 - name: Clone Repository
   git:
     repo: 'https://github.com/skoobe/riofs.git'

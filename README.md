@@ -35,6 +35,6 @@ License
 Contributors
 ------------
 * [Chris Olstrom](https://colstrom.github.io/) | [e-mail](mailto:chris@olstrom.com) | [Twitter](https://twitter.com/ChrisOlstrom)
+* [Aaron Pederson](https://aaronpederson.github.io/) | [e-mail](mailto:aaron.pederson@gmail.com) | [Twitter](https://twitter.com/GunFuSamurai)
 * Justin Scott
 * Steven Harradine
-* Aaron Pederson
