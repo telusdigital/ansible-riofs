@@ -13,12 +13,9 @@
     - libxml2-dev
     - pkg-config
 
+#Patch for https://github.com/skoobe/riofs/issues/147
 - name: Install libssl-dev
-  apt:
-    state: latest
-    pkg: libssl-dev
-    default_release: '1.0.*'
-    update_cache: yes
+  shell: dpkg -i /var/cache/apt/archives/libssl-dev_1.0.1f-1ubuntu2.22_amd64.deb
 
 - name: Clone Repository
   git:
