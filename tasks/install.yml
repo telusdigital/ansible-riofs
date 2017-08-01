@@ -16,7 +16,6 @@
 
 - name: Create File | preferences.d/libssl
   template:
-    state: present
     src: etc/apt/preferences.d/libssl
     dest: /etc/apt/preferences.d/libssl
 
