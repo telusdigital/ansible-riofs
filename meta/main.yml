@@ -18,12 +18,14 @@ galaxy_info:
   author: "Chris Olstrom"
   company: "TELUS digital"
   description: "RioFS is an userspace filesystem for Amazon S3 buckets for servers."
+  issue_tracker_url: https://github.com/telusdigital/ansible-riofs/issues
   license: MIT
+  min_ansible_version: 1.9
   platforms:
     - name: Ubuntu
       versions:
       - trusty
-  categories:
+  galaxy_tags:
     - cloud:ec2
     - system
     - networking
